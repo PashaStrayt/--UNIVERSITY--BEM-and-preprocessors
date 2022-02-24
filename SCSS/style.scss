@@ -1,7 +1,29 @@
-header {
-    width: 40vw;
-    height: 20vh;
+@import '_reset.scss';
+
+.wrapper {
+    width: 1200px;
     margin: 0 auto;
-    background: black;
-    color: white;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    padding: 36px 0;
+}
+
+.h1,
+.h2,
+.h3,
+.h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.header__h3 {
+    font-size: 32px;
+}
+
+.a {
+    font-family: 'Inter', sans-serif;
 }
