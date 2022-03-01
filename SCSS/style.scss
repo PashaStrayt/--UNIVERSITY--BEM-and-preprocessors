@@ -56,17 +56,17 @@
 }
 
 .section {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .section_1 {
-    width: 100%;
     padding: 88px 0;
 }
 
-.pageDesc {
+.pageDesc, .card {
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
@@ -91,7 +91,7 @@
     line-height: 27px;
 }
 
-.pageDesc__p {
+.pageDesc__p, .roomCard__p {
     font-size: 18px;
     color: #848FAC;
 }
@@ -107,11 +107,9 @@
 
 .img {
     width: 100%;
-    height: 100%;
 }
 
 .section_2 {
-    width: 100%;
     padding: 80px 0;
 }
 
@@ -130,4 +128,120 @@
     line-height: 54px;
     letter-spacing: -0.01em;
     color: #192252;
+}
+
+.section_3 {
+    padding: 80px 0 16px 0;
+}
+
+.pageDesc_3 {
+    width: 577px;
+    height: 159px;
+}
+
+.pageImg_3 {
+    width: 384px;
+    height: 384px;
+}
+
+.section_4 {
+    padding: 16px 0 80px 0;
+}
+
+.pageDesc_4 {
+    width: 572px;
+    height: 159px;
+}
+
+.pageImg_4 {
+    width: 384px;
+    height: 384px;
+}
+
+.section_5 {
+    height: 1176px;
+    flex-flow: column nowrap;
+    padding: 80px 0;
+}
+
+.pageDesc_5 {
+    width: 588px;
+    height: 215px;
+    align-items: center;
+    text-align: center;
+}
+
+.roomCard {
+    width: 384px;
+    height: 713px;
+
+    div {
+        width: 100%;
+        height: 133px;
+    }
+}
+
+.roomCard__h4 {
+    font-size: 24px;
+    color: #000000;    
+}
+
+.roomCard__a {
+    font-size: 18px;
+    color: #424F7B;
+}
+
+.footer {
+    padding: 120px calc((100vw - 1200px) / 2);
+    background: #0B265A;
+    height: calc(204px + 120px + 120px);
+}
+
+.footerDesc {
+    width: 585px;
+    height: 100%;
+}
+
+.footerDesc__h3 {
+    font-size: 32px;
+    color: #FFFFFF;
+}
+
+.footerDesc__p {
+    font-size: 16px;
+    color: #D9DBDE;
+}
+
+.socLinks {
+    width: 144px;
+}
+
+.socLinks__a {
+    font-size: 32px;
+    color: white;
+}
+
+.footerLinks {
+    width: calc(1200px - 585px);
+    height: 100%;
+    align-items: flex-start;
+    div {
+        height: 100%;
+        flex: 1 1 33.33%;
+    }
+    div:nth-child(2) {
+        height: 105px;
+    }
+    div:nth-child(3) {
+        height: 148px;
+    }
+    a {
+        font-size: 16px;
+        font-weight: 400;
+        color: #D9DBDE;
+    }
+    b {
+        font-weight: bold;
+        color: white;
+    }
 }
